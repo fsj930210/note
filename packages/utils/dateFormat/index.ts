@@ -1,6 +1,6 @@
 /**
  *
- * @param  date 需要转换的日期
+ * @param  date 需要转换的日期 可以是一个日期、时间戳或者字符串
  * @param formatString 格式 Y-年 M-月 D-日 H-时 m-分 s-秒 S-毫秒 q-季度 w-星期
  * @description 格式化日期展现形式
  * @example
@@ -12,9 +12,9 @@ function dateFormat(date: Date, formatString: string): string;
 function dateFormat(date: number, formatString: string): string;
 function dateFormat(date: string, formatString: string): string;
 function dateFormat(date: Date | number | string, formatString: string = 'YYYY-MM-DD HH:mm:ss'): string {
-  const _date = new Date(date);
+  const _date: Date | string = new Date(date);
   // 输入无效的字符串、或者浏览器不支持的格式会返回 Invalid Date
-  // @ts-ignore
+  //@ts-ignore
   if (_date !== 'Invalid Date') {
     const week: string[] = ['日', '一', '二', '三', '四', '五', '六'];
     const quarter: string[] = ['一', '二', '三', '四'];
@@ -26,7 +26,7 @@ function dateFormat(date: Date | number | string, formatString: string = 'YYYY-M
       'm+': _date.getMinutes().toString(),
       's+': _date.getSeconds().toString(),
       'S+': _date.getMilliseconds().toString(),
-      'q+': quarter[Math.floor((_date.getMonth() + 3) / 3)],
+      'q+': quarter[Math.floor((_date.getMonth() + 3) / 3) - 1],
       'w+': week[_date.getDay()]
     };
 
