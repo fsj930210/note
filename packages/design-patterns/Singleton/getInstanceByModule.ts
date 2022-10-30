@@ -1,4 +1,4 @@
-let instance: Singletone | null = null;
+const instance: Singletone | null = null;
 
 class Singletone {}
 

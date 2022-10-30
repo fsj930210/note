@@ -17,6 +17,6 @@
     "baseUrl": ".",
     "types": ["node", "jest"]
   },
-  "exclude": ["node_modules"],
-  "include": ["packages/**/*.ts","packages/**/*.tsx", "packages/**/*.vue"]
+  "exclude": ["node_modules", ".eslintignore", "babel.config.js"],
+  "include": ["packages/**/*.ts","packages/**/*.tsx", "packages/**/*.vue", "packages/demo/npm-script/src/index.js", "packages/demo/npm-script/src/index.js", "packages/demo/npm-script/tests/index.spec.js", "packages/demo/npm-script/tests/index.spec.js", "packages/demo/npm-script/src/index.js"]
 }

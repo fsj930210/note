@@ -1,8 +1,9 @@
 {
-  "name": "root",
+  "name": "@fengshaojian/note",
   "private": true,
+  "author": "fengshaojian <fsj930210@163.com> (https://www.github.com/fsj930210)",
   "scripts": {
-    "lint": "eslint src --fix --ext .ts,.tsx,.vue,.js,.jsx",
+    "lint": "eslint packages --fix --ext .ts,.tsx,.vue,.js,.jsx",
     "prettier": "prettier --write .",
     "test": "jest"
   },
@@ -35,7 +36,7 @@
     }
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,vue,ts,tsx}": [
+    "packages/**/*.{js,jsx,vue,ts,tsx}": [
       "npm run lint",
       "prettier --write"
     ]

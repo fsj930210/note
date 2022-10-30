@@ -24,3 +24,8 @@ dist-ssr
 *.sw?
 
 coverage
+node_modules
+.vscode
+coverage_archive
+.nyc_output
+dist

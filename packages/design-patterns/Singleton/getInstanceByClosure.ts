@@ -1,5 +1,5 @@
 function getInstance() {
-  let instance: Singleton | null = null;
+  const instance: Singleton | null = null;
   class Singleton {}
   return () => {
     if (instance === null) {

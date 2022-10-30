@@ -11,7 +11,7 @@
 function dateFormat(date: Date, formatString: string): string;
 function dateFormat(date: number, formatString: string): string;
 function dateFormat(date: string, formatString: string): string;
-function dateFormat(date: Date | number | string, formatString: string = 'YYYY-MM-DD HH:mm:ss'): string {
+function dateFormat(date: Date | number | string, formatString = 'YYYY-MM-DD HH:mm:ss'): string {
   const _date: Date | string = new Date(date);
   // 输入无效的字符串、或者浏览器不支持的格式会返回 Invalid Date
   //@ts-ignore

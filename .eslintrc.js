@@ -47,13 +47,13 @@ module.exports = {
     // 禁止不必要的括号
     'no-extra-parens': 'off',
     // 禁止对 function 声明重新赋值
-    'no-func-assign': 'warn',
+    'no-func-assign': 'error',
     // 禁止在 return、throw、continue 和 break 语句之后出现不可达代码
-    'no-unreachable': 'warn',
+    'no-unreachable': 'error',
     // 强制所有控制语句使用一致的括号风格
     curly: 'warn',
     // 要求 switch 语句中有 default 分支
-    'default-case': 'warn',
+    'default-case': 'error',
     // 强制尽可能地使用点号
     'dot-notation': 'warn',
     // 要求使用 === 和 !==
@@ -116,8 +116,9 @@ module.exports = {
     'no-mixed-spaces-and-tabs': 'warn',
     // 禁止出现多行空行
     'no-multiple-empty-lines': 'warn',
+    quotes: ['error', 'single'],
     // 禁止出现;
-    semi: ['warn', 'always'],
+    semi: ['error', 'always'],
     // 强制在块之前使用一致的空格
     'space-before-blocks': 'warn',
     // 强制在 function的左括号之前使用一致的空格
@@ -144,7 +145,8 @@ module.exports = {
     'no-extra-boolean-cast': 'warn',
     'no-case-declarations': 'warn',
     'no-async-promise-executor': 'warn',
-    'vue/multi-word-component-names': 'off'
+    'vue/multi-word-component-names': 'off',
+    'no-unused-vars': 'off'
   },
   globals: {
     defineProps: 'readonly',
