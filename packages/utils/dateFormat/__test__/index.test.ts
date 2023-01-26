@@ -1,4 +1,4 @@
-import dateFormat from './index';
+import dateFormat from '../index';
 
 describe('日期格式化测试', () => {
   test('测试日期', () => {

@@ -36,7 +36,7 @@ function dateFormat(date: Date | number | string, formatString = 'YYYY-MM-DD HH:
         if (reg) {
           const $1 = reg[1]; // 匹配的模式
           // 将模式替换为实际的值 当实际的值不足模式的长度则在前面补零
-          formatString = formatString.replace($1, $1.length == 1 ? rules[key] : rules[key].padStart($1.length, '0'));
+          formatString = formatString.replace($1, $1.length === 1 ? rules[key] : rules[key].padStart($1.length, '0'));
         }
       }
     }

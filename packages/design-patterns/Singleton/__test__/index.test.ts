@@ -1,4 +1,4 @@
-import { getInstanceByClass, getInstanceByClosure, getInstanceByModule } from './index';
+import { getInstanceByClass, getInstanceByClosure, getInstanceByModule } from '../index';
 
 describe('单例模式测试', () => {
   test('getInstanceByClass', () => {

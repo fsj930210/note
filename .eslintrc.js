@@ -34,10 +34,11 @@ module.exports = {
     '@typescript-eslint/ban-types': 'off',
     '@typescript-eslint/no-non-null-assertion': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
+    '@typescript-eslint/no-this-alias': 'off',
     'no-var': 'error',
     'prettier/prettier': 'error',
     // 禁止出现console
-    'no-console': 'warn',
+    'no-console': 'off',
     // 禁用debugger
     'no-debugger': 'warn',
     // 禁止出现重复的 case 标签
@@ -67,7 +68,7 @@ module.exports = {
     // 禁止使用多个空格
     'no-multi-spaces': 'warn',
     // 禁止多次声明同一变量
-    'no-redeclare': 'warn',
+    'no-redeclare': 'off',
     // 禁止在 return 语句中使用赋值语句
     'no-return-assign': 'warn',
     // 禁用不必要的 return await
@@ -135,7 +136,6 @@ module.exports = {
     'switch-colon-spacing': 'warn',
     // 强制箭头函数的箭头前后使用一致的空格
     'arrow-spacing': 'warn',
-    'no-var': 'warn',
     'prefer-const': 'warn',
     'prefer-rest-params': 'warn',
     'no-useless-escape': 'warn',
