@@ -286,7 +286,7 @@ describe("co(* -> yield fn(done))", function () {
       return co(function* () {
         try {
           const a = yield get(1, null, new Error("boom"));
-        } catch (err) {
+        } catch (err: any) {
           expect("boom").toEqual(err.message);
         }
       });
@@ -415,13 +415,13 @@ describe("co(* -> yield fn(done))", function () {
       return co(function* () {
         try {
           const a = yield get(1, new Error("foo"));
-        } catch (err) {
+        } catch (err: any) {
           errors.push(err.message);
         }
 
         try {
           const a = yield get(1, new Error("bar"));
-        } catch (err) {
+        } catch (err: any) {
           errors.push(err.message);
         }
 
@@ -435,13 +435,13 @@ describe("co(* -> yield fn(done))", function () {
       return co(function* () {
         try {
           const a = yield get(1, null, new Error("foo"));
-        } catch (err) {
+        } catch (err: any) {
           errors.push(err.message);
         }
 
         try {
           const a = yield get(1, null, new Error("bar"));
-        } catch (err) {
+        } catch (err: any) {
           errors.push(err.message);
         }
 

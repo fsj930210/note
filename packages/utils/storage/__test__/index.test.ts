@@ -1,3 +1,7 @@
+/**
+ * @jest-environment jsdom
+ */
+
 import MyStorage from '../index';
 const mockCallback = jest.fn();
 

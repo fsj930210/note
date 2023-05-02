@@ -72,3 +72,5 @@ const uniqueSymbolBaz: typeof uniqueSymbolFoo = uniqueSymbolFoo
 
 ```
 
++ 字符串枚举成员只会进行单次映射，而数字枚举可以双向映射。常量枚举只能通过枚举成员访问枚举值，因为在编译时直接内联替换为枚举的值，
+
